@@ -12,7 +12,7 @@ To replicate our results, clone this repository and follow the steps below.
 - [PubMedBERT](https://huggingface.co/microsoft/BiomedNLP-PubMedBERT-base-uncased-abstract)
 
 You can set the training parameter such as [```num_epoch```](https://github.com/Narabzad/Language-model-selection-strategy/blob/85a02ed4294412db32e1315a9017ae264a6103b2/fine-tune.py#L39) in ```fine-tune.py```
-The fine-tuned models and their results would be saved in [```models/fine-tuned```] (https://github.com/Narabzad/Language-model-selection-strategy/tree/main/models/fine-tuned) and [```results/fine-tuned```](https://github.com/Narabzad/Language-model-selection-strategy/tree/main/results/fine-tuned) respectively.
+The fine-tuned models and their results would be saved in [```models/fine-tuned```](https://github.com/Narabzad/Language-model-selection-strategy/tree/main/models/fine-tuned) and [```results/fine-tuned```](https://github.com/Narabzad/Language-model-selection-strategy/tree/main/results/fine-tuned) respectively.
 After you have the standalone model results, you can train a classifier based on these models evalaution on BioASQ8b train set using ```train_classifier.py```
 ```train_classifier.py``` would train classifier on each pari of the mentioned model and save the classifier models in 1``'models/classifier```.
 
