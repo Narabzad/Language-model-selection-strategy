@@ -21,4 +21,4 @@ Due to size of the models, we uploaded our best-performened classifiers [here]()
 
 In the last step, you may get the final prediction of our proposed appraoch using ```test_classifier.py```. The results of prediction would be stored in [```results/ours```](https://github.com/Narabzad/Language-model-selection-strategy/tree/main/results/ours) in the following format :
 
-```question id \t the oracle language model (between the two) \t predicted language model ```
+```question_id \t oracle_lm \t predicted_lm ```
