@@ -11,12 +11,12 @@ To replicate our results, clone this repository and follow the steps below.
 - [DistilRoberta](https://huggingface.co/distilroberta-base)
 - [PubMedBERT](https://huggingface.co/microsoft/BiomedNLP-PubMedBERT-base-uncased-abstract)
 
-You can set the training parameter such as ``epoch_num'' in fine-tune.py
+You can set the training parameter such as ```epoch_num``` in fine-tune.py
 The results of standalone model's prediction wouldd be saved in models/standalone-fine-tuned
 
-After you have the standalone model results, you can train a classifier based on these models evalaution on BioASQ8b train set using ```train_classifier.py'''
-```train_classifier.py''' would train classifier on each pari of the mentioned model and save the classifier models in 1``'models/classifier''.
+After you have the standalone model results, you can train a classifier based on these models evalaution on BioASQ8b train set using ```train_classifier.py```
+```train_classifier.py``` would train classifier on each pari of the mentioned model and save the classifier models in 1``'models/classifier```.
 
 Due to size of the models, we uploaded our best-performened classifiers in this google drive.
 
-In the last stepo, you may get the final prediction of our proposed appraoch using 11'test_classifier.py''. The results of prediction would be stored in ``results/ours'' in the format of ``question id \t the oracle language model ( between the two mentioned) \t predicted language model ''
+In the last stepo, you may get the final prediction of our proposed appraoch using ```test_classifier.py```. The results of prediction would be stored in ```results/ours``` in the format of ``question id \t the oracle language model ( between the two mentioned) \t predicted language model ```
