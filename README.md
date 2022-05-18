@@ -4,12 +4,12 @@ This repository include the code and data regarding the paper "A Pre-trained Lan
 
 To replicate our results, clone this repository and follow the steps below. 
 
-``fine-tune.py'' would fine tune the following models on BioASQ7b dataset on question answering task.
-- BERT-based-uncased
-- Roberta-base
-- Distilbert
-- DistilRoberta
-- PubmedBERT
+1.``fine-tune.py'' script would fine tune the following models on BioASQ7b dataset on question answering task.
+- [BERT](https://huggingface.co/bert-base-uncased)
+- [Roberta](https://huggingface.co/roberta-base)
+- [Distilbert](https://huggingface.co/distilbert-base-uncased)
+- [DistilRoberta](https://huggingface.co/distilroberta-base)
+- [PubMedBERT](https://huggingface.co/microsoft/BiomedNLP-PubMedBERT-base-uncased-abstract)
 
 You can set the training parameter such as ``epoch_num'' in fine-tune.py
 The results of standalone model's prediction wouldd be saved in models/standalone-fine-tuned
