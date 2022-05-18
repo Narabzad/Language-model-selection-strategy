@@ -11,7 +11,7 @@ To replicate our results, clone this repository and follow the steps below.
 - [DistilRoberta](https://huggingface.co/distilroberta-base)
 - [PubMedBERT](https://huggingface.co/microsoft/BiomedNLP-PubMedBERT-base-uncased-abstract)
 
-You can set the training parameter such as ```epoch_num``` in fine-tune.py
+You can set the training parameter such as [```num_epoch```](https://github.com/Narabzad/Language-model-selection-strategy/blob/85a02ed4294412db32e1315a9017ae264a6103b2/fine-tune.py#L39) in fine-tune.py
 The results of standalone model's prediction wouldd be saved in models/standalone-fine-tuned
 
 After you have the standalone model results, you can train a classifier based on these models evalaution on BioASQ8b train set using ```train_classifier.py```
