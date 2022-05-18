@@ -4,7 +4,7 @@ This repository include the code and data regarding the paper "A Pre-trained Lan
 
 To replicate our results, clone this repository and follow the steps below. 
 
-1.``fine-tune.py'' script would fine tune the following models on BioASQ7b dataset on question answering task.
+1.```fine-tune.py''' script would fine tune the following models on BioASQ7b dataset on question answering task.
 - [BERT](https://huggingface.co/bert-base-uncased)
 - [Roberta](https://huggingface.co/roberta-base)
 - [Distilbert](https://huggingface.co/distilbert-base-uncased)
@@ -14,8 +14,8 @@ To replicate our results, clone this repository and follow the steps below.
 You can set the training parameter such as ``epoch_num'' in fine-tune.py
 The results of standalone model's prediction wouldd be saved in models/standalone-fine-tuned
 
-After you have the standalone model results, you can train a classifier based on these models evalaution on BioASQ8b train set using ``train_classifier.py''
-``train_classifier.py'' would train classifier on each pari of the mentioned model and save the classifier models in 1``'models/classifier''.
+After you have the standalone model results, you can train a classifier based on these models evalaution on BioASQ8b train set using ```train_classifier.py'''
+```train_classifier.py''' would train classifier on each pari of the mentioned model and save the classifier models in 1``'models/classifier''.
 
 Due to size of the models, we uploaded our best-performened classifiers in this google drive.
 
