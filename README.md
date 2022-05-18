@@ -13,9 +13,10 @@ To replicate our results, clone this repository and follow the steps below.
 
 You can set the training parameter such as [```num_epoch```](https://github.com/Narabzad/Language-model-selection-strategy/blob/85a02ed4294412db32e1315a9017ae264a6103b2/fine-tune.py#L39) in ```fine-tune.py```
 The fine-tuned models and their results would be saved in [```models/fine-tuned```](https://github.com/Narabzad/Language-model-selection-strategy/tree/main/models/fine-tuned) and [```results/fine-tuned```](https://github.com/Narabzad/Language-model-selection-strategy/tree/main/results/fine-tuned) respectively.
-After you have the standalone model results, you can train a classifier based on these models evalaution on BioASQ8b train set using ```train_classifier.py```
-```train_classifier.py``` would train classifier on each pari of the mentioned model and save the classifier models in 1``'models/classifier```.
 
-Due to size of the models, we uploaded our best-performened classifiers in this google drive.
+After you have the standalone model's results, you can train a classifier based on these models evalaution on BioASQ8b train set using ```train_classifier.py```.
+```train_classifier.py``` would train classifier on every pair of the mentioned language models and save the classifiers in [``'models/classifier```](https://github.com/Narabzad/Language-model-selection-strategy/tree/main/models/classifier).
 
-In the last stepo, you may get the final prediction of our proposed appraoch using ```test_classifier.py```. The results of prediction would be stored in ```results/ours``` in the format of ``question id \t the oracle language model ( between the two mentioned) \t predicted language model ```
+Due to size of the models, we uploaded our best-performened classifiers [here]().
+
+In the last step, you may get the final prediction of our proposed appraoch using ```test_classifier.py```. The results of prediction would be stored in ```results/ours``` in the format of ``question id \t the oracle language model ( between the two mentioned) \t predicted language model ```
