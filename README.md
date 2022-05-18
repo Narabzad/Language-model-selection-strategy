@@ -4,7 +4,7 @@ This repository include the code and data regarding the paper "A Pre-trained Lan
 
 To replicate our results, clone this repository and follow the steps below. 
 
-1.```fine-tune.py``` script would fine tune the following models on BioASQ7b dataset on question answering task.
+1. ```fine-tune.py``` script would fine tune the following models on BioASQ7b dataset on question answering task.
 - [BERT](https://huggingface.co/bert-base-uncased)
 - [Roberta](https://huggingface.co/roberta-base)
 - [Distilbert](https://huggingface.co/distilbert-base-uncased)
@@ -14,11 +14,11 @@ To replicate our results, clone this repository and follow the steps below.
 You can set the training parameter such as [```num_epoch```](https://github.com/Narabzad/Language-model-selection-strategy/blob/85a02ed4294412db32e1315a9017ae264a6103b2/fine-tune.py#L39) in ```fine-tune.py```
 The fine-tuned models and their results would be saved in [```models/fine-tuned```](https://github.com/Narabzad/Language-model-selection-strategy/tree/main/models/fine-tuned) and [```results/fine-tuned```](https://github.com/Narabzad/Language-model-selection-strategy/tree/main/results/fine-tuned) respectively.
 
-After you have the standalone model's results, you can train a classifier based on these models evalaution on BioASQ8b train set using ```train_classifier.py```.
+2. After you have the standalone model's results, you can train a classifier based on these models evalaution on BioASQ8b train set using ```train_classifier.py```.
 ```train_classifier.py``` would train classifier on every pair of the mentioned language models and save the classifiers in [```models/classifier```](https://github.com/Narabzad/Language-model-selection-strategy/tree/main/models/classifier).
 
 Due to size of the models, we uploaded our best-performened models [here](https://drive.google.com/drive/folders/19qkRvFTkn1MbJWNjymLlK9rGLYcRjjgm?usp=sharing). You may put them in [```models/classifier```](https://github.com/Narabzad/Language-model-selection-strategy/tree/main/models/classifier)
 
-In the last step, you may get the final prediction of our proposed appraoch using ```test_classifier.py```. The results of prediction would be stored in [```results/ours```](https://github.com/Narabzad/Language-model-selection-strategy/tree/main/results/ours) in the following format :
+3. In the last step, you may get the final prediction of our proposed appraoch using ```test_classifier.py```. The results of prediction would be stored in [```results/ours```](https://github.com/Narabzad/Language-model-selection-strategy/tree/main/results/ours) in the following format :
 
 ```question_id \t oracle_lm \t predicted_lm ```
