@@ -4,7 +4,7 @@ This repository include the code and data regarding the paper "A Pre-trained Lan
 
 To replicate our results, clone this repository and follow the steps below. 
 
-1.```fine-tune.py''' script would fine tune the following models on BioASQ7b dataset on question answering task.
+1.```fine-tune.py``` script would fine tune the following models on BioASQ7b dataset on question answering task.
 - [BERT](https://huggingface.co/bert-base-uncased)
 - [Roberta](https://huggingface.co/roberta-base)
 - [Distilbert](https://huggingface.co/distilbert-base-uncased)
