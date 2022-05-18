@@ -17,7 +17,7 @@ The fine-tuned models and their results would be saved in [```models/fine-tuned`
 After you have the standalone model's results, you can train a classifier based on these models evalaution on BioASQ8b train set using ```train_classifier.py```.
 ```train_classifier.py``` would train classifier on every pair of the mentioned language models and save the classifiers in [```models/classifier```](https://github.com/Narabzad/Language-model-selection-strategy/tree/main/models/classifier).
 
-Due to size of the models, we uploaded our best-performened models [here](https://drive.google.com/drive/folders/19qkRvFTkn1MbJWNjymLlK9rGLYcRjjgm?usp=sharing).
+Due to size of the models, we uploaded our best-performened models [here](https://drive.google.com/drive/folders/19qkRvFTkn1MbJWNjymLlK9rGLYcRjjgm?usp=sharing). You may put them in [```models/classifier```](https://github.com/Narabzad/Language-model-selection-strategy/tree/main/models/classifier)
 
 In the last step, you may get the final prediction of our proposed appraoch using ```test_classifier.py```. The results of prediction would be stored in [```results/ours```](https://github.com/Narabzad/Language-model-selection-strategy/tree/main/results/ours) in the following format :
 
